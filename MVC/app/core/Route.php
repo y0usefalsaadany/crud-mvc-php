@@ -22,7 +22,7 @@ class route
         $this -> call_controller( );
     }
     private function url(){
-        $url = $_SERVER['QUERY_STRING'];
+        $url = $_SERVER['REQUEST_URL'];
         $url = trim($url,'/');
         if(!empty($url)){
             // url from string to array
